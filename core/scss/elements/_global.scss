@@ -1,0 +1,42 @@
+html {
+    width: 100%;
+    height: 100%;
+    font-size: $base-font-size;
+    background: color(base, background);
+}
+
+body {
+    min-width: $site-min-width;
+    max-width: $site-max-width;
+    min-height: 100%;
+    margin: 0 auto;
+    font-family: $base-font-family;
+    font-size: 1rem;
+    line-height: $base-line-height-ratio;
+    background: color(base, background--dark);
+    color: color(base, text);
+    padding: $gutter;
+    -webkit-text-size-adjust: 100%;
+
+    @include media-query("lap-and-up") {
+        padding: $gutter--double;
+    }
+
+    @include media-query("desk") {
+        padding: $gutter--jumbo;
+    }
+}
+
+a[href^="mailto"] {
+    @include word-wrap();
+}
+
+.clear {
+
+    &:after,
+    &:before {
+        content: "";
+        clear: both;
+        display: block;
+    }
+}
