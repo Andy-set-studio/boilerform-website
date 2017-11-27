@@ -1,0 +1,40 @@
+{% capture site_title %}
+
+    {% if page.meta_title %}
+        {{ page.meta_title | replace: "site_title", site.title }}
+    {% else %}
+        {{ page.title }} - {{ site.title }}
+    {% endif %}
+
+{% endcapture %}
+
+{% capture site_desc %}
+
+    {% if page.meta_desc %}
+        {{ page.meta_desc }}
+    {% elsif page.summary%}
+        {{ page.summary }}
+    {% endif %}
+
+{% endcapture %}
+
+<title>{{ site_title }}</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<meta property="og:site_name" content="HankChizlJaw" />
+<meta property="og:title" content="{{ site_title }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ site.url }}" />
+
+{% if site_desc %}
+    <meta name="description" content="{{ site_desc }}" />
+    <meta property="og:description" content="{{ site_desc }}" />
+    <meta name="twitter:description" content="{{ site_desc }}" />   
+{% endif %}
+
+<meta property="og:image" content="{{ site.asset_base }}/images/generic/social-share-image.jpg?{{ site.asset_version }}" />
+<meta name="twitter:image" content="{{ site.asset_base }}/images/generic/social-share-image.jpg?{{ site.asset_version }}" />
+<meta name="twitter:creator" content="{{ site.twitter_handle }}" />
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">

@@ -1,0 +1,34 @@
+---
+layout: minify-html
+---
+<!DOCTYPE html>
+<html dir="ltr" lang="en-GB" class="no-js">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+        {% include meta-info.html %} 
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ site.asset_base }}/images/icons/apple-touch-icon.png?{{ site.asset_version }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ site.asset_base }}/images/icons/favicon-32x32.png?{{ site.asset_version }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ site.asset_base }}/images/icons/favicon-16x16.png?{{ site.asset_version }}">
+        <link rel="manifest" href="{{ site.asset_base }}/images/icons/manifest.json">
+        <link rel="mask-icon" href="{{ site.asset_base }}/images/icons/safari-pinned-tab.svg" color="#9a46fa">
+        <link rel="shortcut icon" href="{{ site.asset_base }}/images/icons/favicon.ico?{{ site.asset_version }}">
+        <meta name="msapplication-config" content="{{ site.asset_base }}/images/icons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="stylesheet" href="{{ site.asset_base }}/css/main.css?{{ site.asset_version }}" />
+    </head>
+    <body>
+
+        {% include partials/site-head.html %}
+
+        <main id="main-content">
+            {{ content }}
+        </main>
+
+        {% include partials/site-foot.html %}
+   </body>
+</html>

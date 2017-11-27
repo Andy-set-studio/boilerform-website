@@ -1,0 +1,8 @@
+# Assets
+asset_base: "/assets"
+asset_version: "0.1.0"
+
+# Build settings
+markdown: "kramdown"
+exclude:
+  - "core"
