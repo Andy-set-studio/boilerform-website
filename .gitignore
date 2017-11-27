@@ -1,0 +1,7 @@
+*.scssc
+.DS_Store
+.sass-cache
+.public
+*.log
+*.lock
+node_modules
