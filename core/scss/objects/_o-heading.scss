@@ -1,0 +1,31 @@
+.o-heading {
+    font-family: $heading-font-family;
+    line-height: $tight-line-height-ratio;
+    letter-spacing: 1px;
+    color: color(base, text);
+    display: block;
+    position: relative;
+    max-width: 50ch;
+
+    &--primary {
+        font-size: 2.50rem;
+        padding: 0 0 $gutter 0;
+
+        @include media-query("lap-and-up") {
+            font-size: 3.75rem;
+        }
+
+        // Add a little decor 
+        &:after {
+            display: block;
+            width: 185px;
+            height: 5px;
+            background: color(base, primary);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            @include pseudo-decor();
+        }
+    }
+}
