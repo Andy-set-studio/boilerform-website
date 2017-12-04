@@ -11,6 +11,21 @@ layout: base
         </div>
     </article>
 </section>
-<section class="c-section" id="examples">
-    <h2 class="o-heading o-heading--primary">Examples</h2>
+<section class="[ c-section ] [ flow-vertical--double ]" id="examples">
+    <h2 class="[ o-heading o-heading--primary ] [ breathe--double-bottom ]">Examples</h2>
+
+    {% for item in site.examples %}
+        <article class="flow-vertical--midi" aria-live="polite">
+            <h3 class="o-heading o-heading--secondary">{{ item.title }}</h3>
+            <p data-height="450" 
+                data-theme-id="dark" 
+                data-slug-hash="{{ item.codepen_code }}" 
+                data-default-tab="result" 
+                data-user="hankchizljaw" 
+                data-embed-version="2" 
+                data-pen-title="{{ item.title }}" 
+                class="codepen">See the Pen <a href="https://codepen.io/hankchizljaw/pen/Yrmxqw/">{{ item.title }}</a> by Andy Bell (<a href="https://codepen.io/hankchizljaw">@hankchizljaw</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        </article>
+    {% endfor %}
+
 </section>

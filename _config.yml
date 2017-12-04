@@ -7,6 +7,11 @@ markdown: "kramdown"
 exclude:
   - "core"
 
+# Collections
+collections:
+  examples:
+    output: false
+
 # Nav
 nav:
   - text: "Examples"
