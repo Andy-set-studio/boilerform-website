@@ -1,0 +1,15 @@
+.c-button-group {
+    
+    @include media-query("lap-and-up") {
+        display: flex;
+        flex-direction: row;
+    }
+
+    > * + * {
+        margin: $rhythm 0 0 0;
+
+        @include media-query("lap-and-up") {
+            margin: 0 0 0 $rhythm;
+        }
+    }
+}
