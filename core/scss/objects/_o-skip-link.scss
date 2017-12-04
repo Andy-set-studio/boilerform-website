@@ -1,0 +1,15 @@
+.o-skip-link {
+    color: color(base, text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    padding: $gutter--mini $gutter;
+    text-decoration: none;
+    opacity: 0;
+    background: color(base, primary);
+
+    &:focus {
+        opacity: 1;
+    }
+}
