@@ -1,0 +1,14 @@
+.c-section {
+
+    & + & {
+        padding-top: $gutter--double;
+
+        @include media-query("lap-and-up") {
+            padding-top: $gutter--treble;
+        }
+
+        @include media-query("desk") {
+            padding-top: $gutter--jumbo;
+        }
+    }
+}
