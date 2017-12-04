@@ -1,0 +1,16 @@
+.c-site-head {
+
+    @include media-query("desk") {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__nav {
+        padding: $gutter 0 0 0;
+
+        @include media-query("desk") {
+            padding: 0 0 $gutter--midi 0;
+        }
+    }
+}

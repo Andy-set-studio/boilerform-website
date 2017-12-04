@@ -1,0 +1,30 @@
+.c-nav {
+    white-space: nowrap;
+    letter-spacing: -0.32em;
+    position: relative;
+
+    @include bounce-scroll("horizontal");
+
+    &__item {
+        display: inline-block;
+        position: relative;
+        letter-spacing: normal;
+
+        & + & {
+            margin-left: 14px;
+
+            &:before {
+                content: "-";
+                speak: none;
+                color: color(base, primary);
+                font-weight: 700;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    &__link {
+        color: color(base, text);
+        text-decoration: none;
+    }
+}
