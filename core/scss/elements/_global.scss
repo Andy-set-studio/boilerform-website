@@ -18,6 +18,8 @@ body {
     padding: $gutter;
     -webkit-text-size-adjust: 100%;
 
+    @include selection(color(base, text), color(base, background--dark));
+
     @include media-query("lap-and-up") {
         padding: $gutter--double;
     }
