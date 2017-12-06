@@ -1,5 +1,12 @@
 .o-article {
-    font-size: 1.25rem;
     line-height: $body-copy-line-height-ratio;
     max-width: 75ch;
+
+    a:not([class]) {
+        @include link();
+    }
+
+    @include media-query("lap-and-up") {
+        font-size: 1.25rem;
+    }
 }

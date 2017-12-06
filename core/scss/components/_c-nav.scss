@@ -26,5 +26,7 @@
     &__link {
         color: color(base, text);
         text-decoration: none;
+
+        @include link();
     }
 }
