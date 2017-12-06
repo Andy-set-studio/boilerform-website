@@ -1,0 +1,32 @@
+.c-site-foot {
+    padding: $gutter--double 0;
+
+    @include media-query("desk") {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // Generic links 
+    a {
+        color: color(base, text);
+        text-decoration: none;
+
+        @include hover() {
+            color: color(base, primary);
+        }
+    }
+
+    &__nav {
+        padding: $rhythm 0 0 0;
+
+        @include media-query("desk") {
+            padding: 0;
+        }
+    }
+
+    &__heart {
+        color: color(base, primary);
+    }
+}
