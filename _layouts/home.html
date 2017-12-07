@@ -14,7 +14,8 @@ layout: base
 <section class="[ c-section ] [ flow-vertical--double ]" id="examples">
     <h2 class="[ o-heading o-heading--primary ] [ breathe--double-bottom ]">Examples</h2>
 
-    {% for item in site.examples %}
+    {% assign examples = (site.examples | sort: "display_order") %}
+    {% for item in examples %}
         <article class="flow-vertical--midi" aria-live="polite">
             <h3 class="o-heading o-heading--secondary">{{ item.title }}</h3>
             <p data-height="450" 
