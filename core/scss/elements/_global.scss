@@ -44,6 +44,19 @@ a[href^="mailto"] {
     }
 }
 
+// Code snippets etc
+code {
+    padding: 2px;
+    background: color(base, background--reversed);
+    color: color(base, text--dark);
+    border-radius: $radius--mini;
+
+    pre & {
+        tab-size: 4;
+        padding: 10px;
+    }
+}
+
 // Codepen embed 
 .cp_embed_wrapper {
     max-width: 750px;

@@ -1,6 +1,5 @@
 @mixin link() {
     color: color(base, text);
-    text-decoration: none;
 
     @include hover() {
         color: color(base, primary);
