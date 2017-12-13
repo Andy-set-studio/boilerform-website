@@ -5,5 +5,4 @@
 *.log
 *.lock
 node_modules
-assets
 _site
