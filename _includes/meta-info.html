@@ -33,8 +33,21 @@
     <meta name="twitter:description" content="{{ site_desc }}" />   
 {% endif %}
 
-<meta property="og:image" content="{{ site.asset_base }}/images/generic/social-share-image.jpg?{{ site.asset_version }}" />
-<meta name="twitter:image" content="{{ site.asset_base }}/images/generic/social-share-image.jpg?{{ site.asset_version }}" />
-<meta name="twitter:creator" content="{{ site.twitter_handle }}" />
-
-<link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+<meta property="og:image" content="https://s3-us-west-2.amazonaws.com/s.cdpn.io/174183/share.png" />
+<meta name="twitter:image" content="https://s3-us-west-2.amazonaws.com/s.cdpn.io/174183/share.png" />
+<meta name="twitter:creator" content="@hankchizljaw" />
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org/",
+    "@type": "Website",
+    "name": "Boilerform",
+    "description": "{{ site_desc }}",
+    "url": "{{ site.url }}",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/174183/share.png",
+        "height": 2400,
+        "width": 1260
+    }
+}
+</script>
