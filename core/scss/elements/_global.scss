@@ -52,8 +52,12 @@ code {
     border-radius: $radius--mini;
 
     pre & {
+        display: block;
+        position: relative;
         tab-size: 4;
         padding: 10px;
+
+        @include bounce-scroll("horizontal");
     }
 }
 
