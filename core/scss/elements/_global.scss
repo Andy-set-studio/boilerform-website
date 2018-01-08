@@ -61,6 +61,12 @@ code {
     }
 }
 
+abbr {
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
 // Codepen embed 
 .cp_embed_wrapper {
     max-width: 750px;
