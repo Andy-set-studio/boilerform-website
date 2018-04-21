@@ -1,0 +1,20 @@
+<template>
+    <footer class="[ c-site-foot ] [ c-section ]" role="contentinfo">
+        <p class="c-site-foot__credit">Made with <span class="c-site-foot__heart" aria-label="love">&hearts;</span> by <a href="//twitter.com/hankchizljaw">HankChizlJaw</a> and <a href="//github.com/hankchizljaw/boilerform/graphs/contributors" aria-label="friends which also contribute to Boilerform">friends</a></p>
+        <nav class="c-site-foot__nav">
+            <Nav />
+        </nav>
+    </footer>
+</template>
+
+<script>
+    export default {
+        props: {
+        },
+        data() {
+            return {};		
+        },
+        mounted() {
+        }
+    }
+</script>

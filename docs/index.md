@@ -1,5 +1,4 @@
 ---
-layout: home
 title: Boilerform
 meta_title: Boilerform
 meta_desc: Boilerform is a little HTML and CSS boilerplate to take the pain away from working with forms.

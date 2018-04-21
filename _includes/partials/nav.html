@@ -1,7 +1,0 @@
-<ul class="c-nav">
-    {% for item in site.nav %}
-        <li class="c-nav__item">
-            <a class="c-nav__link" href="{{ item.link }}"{% if item.label %} aria-label="{{ item.label }}"{% endif %}>{{ item.text }}</a>
-        </li>
-    {% endfor %}
-</ul>
