@@ -1,10 +1,10 @@
 Boilerform is designed to be straight-forward to implement. In its most basic form, you can drop a CSS file into your head with the following snippet:
 
 ```html
-<link rel="stylesheet" media="all" href="https://rawgit.com/hankchizljaw/boilerform/master/dist/css/boilerform.min.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/gh/hankchizljaw/boilerform@master/dist/css/boilerform.min.css" />
 ```
 
-Then all you need to do is wrap your elements in a `.boilerform` wrapper. It could be something like this: 
+Then all you need to do is wrap your elements in a `.boilerform` wrapper. It could be something like this:
 
 ```html
 <div class="boilerform">
